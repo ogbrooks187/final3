@@ -15,32 +15,6 @@ MODEL_PATH = "Logistic_Loans (4).pkl"
 with open(MODEL_PATH, "rb") as file:
     model = pickle.load(file)
 
-
-# 2) Load the model from the uploaded bytes (no Drive involved)
-import io
-import pickle
-import sklearn  # keep imported if the model uses scikit-learn classes
-
-# Load directly from in-memory bytes
-buffer = io.BytesIO(uploaded[filename])
-model = pickle.load(buffer)
-
-print("Model loaded:", type(model))
-
-# 3) (Optional) Save a copy inside the Colab runtime (still not Google Drive)
-# This lets you re-use the file in later cells via /content/Logistic_Loans.pkl
-out_path = "/content/Logistic_Loans.pkl"
-with open(out_path, "wb") as f:
-    f.write(uploaded[filename])
-
-print(f"Saved a runtime copy to: {out_path}")
-
-# ---- Example: use the model (replace with your actual prediction code) ----
-# import pandas as pd
-# X_sample = pd.DataFrame({...})
-# y_pred = model.predict(X_sample)
-
-
 # Title for the app
 # st.title("Loan Approval")
 st.markdown(
