@@ -54,6 +54,7 @@ input_data = pd.DataFrame({
     "GROUP": [group],
     "SECTOR": [sector],
     "LENDER": [lender],
+    "JOB": [job],
 })
 
 # --- Prepare Data for Prediction ---
