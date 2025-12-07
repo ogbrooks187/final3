@@ -21,9 +21,6 @@ import io
 import pickle
 import sklearn  # keep imported if the model uses scikit-learn classes
 
-# Use the first uploaded filename (or replace with your exact name)
-filename = next(iter(uploaded.keys()))
-
 # Load directly from in-memory bytes
 buffer = io.BytesIO(uploaded[filename])
 model = pickle.load(buffer)
