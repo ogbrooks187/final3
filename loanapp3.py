@@ -11,7 +11,7 @@ import sklearn  # This is needed for the pickle file to load!
 import pickle
 
 # Preload model from fixed path
-MODEL_PATH = "/workspaces/final3/Logistic_Loans (4).pkl"
+MODEL_PATH = "Logistic_Loans (4).pkl"
 with open(MODEL_PATH, "rb") as file:
     model = pickle.load(file)
 
