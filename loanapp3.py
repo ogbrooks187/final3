@@ -26,11 +26,11 @@ st.markdown(
 st.header("Enter Loan Applicant's Details")
 
 # Input fields for numeric values
-granted = st.slider("Granted Loan Amount (GRANTED)", min_value=1000, max_value=500000000, step=1000)
-requested = st.slider("Requested Loan Amount (REQUESTED)", min_value=1000, max_value=50000000, step=1000)
+granted = st.slider("Granted Loan Amount (GRANTED)", min_value=1000, max_value=500000, step=1000)
+requested = st.slider("Requested Loan Amount (REQUESTED)", min_value=1000, max_value=500000, step=1000)
 fico = st.number_input("FICO Score (FICO)", min_value=0, max_value=900, step=1)
-income = st.slider("Monthly Gross Income (INCOME)", min_value=0, max_value=1000000, step=1)
-payment = st.slider("Monthly Housing Payment (PAYMENT)", min_value=0, max_value=50000000, step=1)
+income = st.slider("Monthly Gross Income (INCOME)", min_value=0, max_value=50000, step=1)
+payment = st.slider("Monthly Housing Payment (PAYMENT)", min_value=0, max_value=50000, step=1)
 bounty = st.slider("Bounty (BOUNTY)", min_value=0, max_value=10000, step=50)
 
 
